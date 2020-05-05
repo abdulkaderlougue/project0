@@ -1,4 +1,9 @@
 $color: white;
+$font-size: 25px;
+
+%mainwidth{
+	width: 80%;	
+}
 
 body{
 	background-color:#133951;
@@ -23,38 +28,7 @@ header h1{
 	text-shadow: 3px 3px 1px dodgerblue;
 	margin: 0;
 }
-/*
-nav ul li{
-	background-color: black;
-	list-style-type: none; /*/ take out the bullet point /*/
-	display: inline-block;
-	padding: 10px;
-	
-}
-nav {
-	background: black;
-	padding: 10px;
-	margin: 0;
-	
-  	position:sticky;
 
-  	top: 0;
-}
-
-nav li a{
-	color:white;
-	text-decoration: none; /*/ get rid of the underline of the link /*/ 
-	font-size: 40px;
-}
-nav li a:hover{
-	background: blue;
-	padding: 10px;
-	text-decoration: none;
-	
-} 
-.active{
-	background-color: blue;
-}*/
 
 hr{
     height: 1px;
@@ -63,54 +37,48 @@ hr{
 }
 .container{
 
-	width: 80%;
+	@extend: %mainwidth;
 	float: left;
 	margin: 5% 0% 7% 4%;
-	font-size: 20px;
-
-}
-.container a{
-	text-decoration-line: none;
-}
-
-.container img{
+	font-size: $font-size;
+	
+	img{
 	display: block;
 	width: 25%;
 	height: 25%;
 	border-radius: 10%;
 	margin-left: auto;
 	margin-right: auto;
+	}
 	
+	a{
+	text-decoration-line: none;}
 }
+
 .sidebar{
 	width: 30%;
 	float: right;
 	margin: 5% 0% 7% 2%;
-	font-size: 25px;
+	font-size: $font-size;
 	
 }
 .resume_container{
-	font-size: 20px;
+	font-size: $font-size - 5px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	@extend: %mainwidth;
 	
-	li{font-size: 20px;}
+	li{font-size: $font-size - 5px;}
 }
-/*.resume_container li{
-	font-size: 20px;
-}*/
+
 .course_container{
-	font-size: 25px;
+	font-size: $font-size;
 	margin-left: auto;
 	margin-right: auto;
 	width: 85%;
-	li{font-size: 20px;}
+	li{font-size: $font-size - 5px;}
 }
 
-/*.course_container li{
-	font-size: 20px;
-}*/
 
 footer{
 	clear: both;
@@ -123,16 +91,17 @@ footer{
 	float: left;
 	width: 40%;
 	padding:30px;
-	font-size: 20px;
+	font-size: $font-size - 5px;
 	text-align: center;
-}
-.contactInfo p{
-	font-size: 25px;
-}
-.contactInfo a{
+	
+	p{font-size: $font-size;}
+	
+	a{
 	text-decoration: none; 
 	margin-right: 20px;
+	}
 }
+
 #copyright{
 	clear: both;
 	text-align: center;
@@ -140,8 +109,8 @@ footer{
 }
 @media screen and (max-width: 790px) {
     .contactInfo{
+		@extend: %mainwidth;
 		float: none;
-		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 } 

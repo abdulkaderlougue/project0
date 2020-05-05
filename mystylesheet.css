@@ -62,22 +62,26 @@ take out the bullet point get rid of the underline of the link hr {
   margin-right: auto;
   width: 80%;
 }
-
 .resume_container li {
   font-size: 20px;
 }
 
+/*.resume_container li{
+	font-size: 20px;
+}*/
 .course_container {
   font-size: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
 }
-
 .course_container li {
   font-size: 20px;
 }
 
+/*.course_container li{
+	font-size: 20px;
+}*/
 footer {
   clear: both;
   color: white;

@@ -1,158 +1,135 @@
-body{
-	background-color:#133951;
-	margin: 0;
-	color: white;
-	
+body {
+  background-color: #133951;
+  margin: 0;
+  color: white;
 }
 
-
-header{
-	margin: 0;
+header {
+  margin: 0;
 }
 
-
-header h1{
-	background: darkgray;
-	color: white;
-	font-family: serif;
-	font-size: 70px;
-	font-weight: 900;
-	padding: 0px;
-	text-shadow: 3px 3px 1px dodgerblue;
-	margin: 0;
+header h1 {
+  background: darkgray;
+  color: white;
+  font-family: serif;
+  font-size: 70px;
+  font-weight: 900;
+  padding: 0px;
+  text-shadow: 3px 3px 1px dodgerblue;
+  margin: 0;
 }
+
 /*
 nav ul li{
 	background-color: black;
-	list-style-type: none; /*/ take out the bullet point /*/
-	display: inline-block;
-	padding: 10px;
-	
-}
-nav {
-	background: black;
-	padding: 10px;
-	margin: 0;
-	
-  	position:sticky;
-
-  	top: 0;
+	list-style-type: none; /*/
+take out the bullet point get rid of the underline of the link hr {
+  height: 1px;
+  background-color: white;
+  border: none;
 }
 
-nav li a{
-	color:white;
-	text-decoration: none; /*/ get rid of the underline of the link /*/ 
-	font-size: 40px;
-}
-nav li a:hover{
-	background: blue;
-	padding: 10px;
-	text-decoration: none;
-	
-} 
-.active{
-	background-color: blue;
-}*/
-
-hr{
-    height: 1px;
-	background-color: white;
-	border: none;
-}
-.container{
-
-	width: 80%;
-	float: left;
-	margin: 5% 0% 7% 4%;
-	font-size: 20px;
-
-}
-.container a{
-	text-decoration-line: none;
+.container {
+  width: 80%;
+  float: left;
+  margin: 5% 0% 7% 4%;
+  font-size: 20px;
 }
 
-.container img{
-	display: block;
-	width: 25%;
-	height: 25%;
-	border-radius: 10%;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-.sidebar{
-	width: 30%;
-	float: right;
-	margin: 5% 0% 7% 2%;
-	font-size: 25px;
-	
-}
-.resume_container{
-	font-size: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-}
-.resume_container li{
-	font-size: 20px;
-}
-.course_container{
-	font-size: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 85%;
+.container a {
+  text-decoration-line: none;
 }
 
-.course_container li{
-	font-size: 20px;
+.container img {
+  display: block;
+  width: 25%;
+  height: 25%;
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-footer{
-	clear: both;
-	color: white;
-	background-color:black;
-	padding: 0px;
+.sidebar {
+  width: 30%;
+  float: right;
+  margin: 5% 0% 7% 2%;
+  font-size: 25px;
 }
 
-.contactInfo{
-	float: left;
-	width: 40%;
-	padding:30px;
-	font-size: 20px;
-	text-align: center;
+.resume_container {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
-.contactInfo p{
-	font-size: 25px;
-}
-.contactInfo a{
-	text-decoration: none; 
-	margin-right: 20px;
-}
-#copyright{
-	clear: both;
-	text-align: center;
 
+.resume_container li {
+  font-size: 20px;
 }
+
+.course_container {
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.course_container li {
+  font-size: 20px;
+}
+
+footer {
+  clear: both;
+  color: white;
+  background-color: black;
+  padding: 0px;
+}
+
+.contactInfo {
+  float: left;
+  width: 40%;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contactInfo p {
+  font-size: 25px;
+}
+
+.contactInfo a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+#copyright {
+  clear: both;
+  text-align: center;
+}
+
 @media screen and (max-width: 790px) {
-    .contactInfo{
-		float: none;
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-} 
-	.contactForm{
-		float: none;
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
+  .contactInfo {
+    float: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*.contactForm{
+  		float: none;
+  		width: 80%;
+  		margin-left: auto;
+  		margin-right: auto;
+  }*/
+  .container {
+    float: none;
+    width: 100%;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
 }
-	.container{
-		float: none;
-		width: 100%;
-}
-	.sidebar{
-		float: none;
-		width: 100%;
-}
-	
-}
+
+/*# sourceMappingURL=mystylesheet.css.map */
